@@ -1,0 +1,27 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: servicio-kelly-pod
+  labels:
+    app: servicio-kelly
+spec:
+  containers:
+    - name: servicio-kelly-container
+      image: kellyquintana0924/lab_grupal_kelly:latest
+      ports:
+        - containerPort: 5000
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: servicio-kelly-service
+spec:
+  type: ClusterIP
+  ports:
+    - port: 80
+      targetPort: 5000
+      protocol: TCP
+  selector:
+    app: servicio-kelly
