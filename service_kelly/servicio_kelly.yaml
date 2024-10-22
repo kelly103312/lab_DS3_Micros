@@ -7,7 +7,7 @@ metadata:
 spec:
   containers:
     - name: servicio-kelly-container
-      image: kellyquintana0924/lab_grupal_kelly:latest
+      image: kellyquintana0924/lab_grupal_kelly:v1
       ports:
         - containerPort: 5000
 
