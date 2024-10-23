@@ -1,0 +1,14 @@
+{
+  "name": "servicioluis-node",
+  "version": "1.0.0",
+  "description": "Microservicio de Luis en Node.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server-luis.js"
+  },
+  "author": "Tu Nombre",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
