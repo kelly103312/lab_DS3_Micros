@@ -7,7 +7,7 @@ metadata:
 spec:
   containers:
     - name: servicio-orquestalab-container
-      image: juleipssy/servicio-api:latest
+      image: herdavid/servicio_orquestador:v1.0
       ports:
         - containerPort: 8001
 
