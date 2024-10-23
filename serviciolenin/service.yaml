@@ -8,7 +8,7 @@ metadata:
 spec:
   containers:
   - name: serviciolenin
-    image: tu-imagen-serviciolenin # Reemplaza con el nombre de tu imagen de Docker
+    image: leninecm/serviceorquesta:latest # Reemplaza con el nombre de tu imagen de Docker
     ports:
     - containerPort: 8000
 
