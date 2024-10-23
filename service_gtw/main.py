@@ -18,5 +18,11 @@ async def orquestar():
         except httpx.RequestError:
             data_lenin = "El servicio de Lenin no está disponible"
 
+        try:
+            respuesta_luis = await client.get("http://servicio_luis/servicioluis")
+            data_luis = respuesta_luis.json()
+        except httpx.RequestError:
+            data_luis = "El servicio de Luis no está disponible"
+
 
     return {"respuesta_kelly": data_a,"respuesta_lenin": data_lenin}
