@@ -1,0 +1,27 @@
+# servicioeyder-pod.yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: servicioeyder
+  labels:
+    app: servicioeyder
+spec:
+  containers:
+  - name: servicioeyder
+    image: eydersantiago/servicioeyder:latest 
+    ports:
+    - containerPort: 8000
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: servicioeyder
+spec:
+  selector:
+    app: servicioeyder
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8000
+  type: ClusterIP
