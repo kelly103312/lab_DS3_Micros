@@ -8,7 +8,7 @@ metadata:
 spec:
   containers:
   - name: servicioeyder
-    image: eydersantiago/serviceorquesta:latest 
+    image: eydersantiago/servicioeyder:latest 
     ports:
     - containerPort: 8000
 
