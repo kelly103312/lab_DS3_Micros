@@ -7,7 +7,7 @@ metadata:
 spec:
   containers:
     - name: servicio-orquestalab-container
-      image: kellyquintana0924/lab_grupal_orquestador:v2.3.1
+      image: kellyquintana0924/lab_grupal_orquestador:v2.3.5
       ports:
         - containerPort: 8001
 
