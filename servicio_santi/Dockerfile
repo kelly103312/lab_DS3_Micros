@@ -12,7 +12,7 @@ RUN npm init -y
 RUN npm install express
 
 # Expone el puerto en el que se ejecutará el servicio
-EXPOSE 3001
+EXPOSE 8000
 
 # Comando para ejecutar la aplicación
 CMD ["node", "santi-service.js"]

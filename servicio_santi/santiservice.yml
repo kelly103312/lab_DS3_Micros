@@ -9,7 +9,7 @@ spec:
     - name: santi-service-container
       image: santiagosanchez03/santi-service:latest
       ports:
-        - containerPort: 3001
+        - containerPort: 8000
 
 ---
 
@@ -21,7 +21,7 @@ spec:
   type: ClusterIP
   ports:
     - port: 80
-      targetPort: 3001
+      targetPort: 8000
       protocol: TCP
   selector:
     app: santi-service

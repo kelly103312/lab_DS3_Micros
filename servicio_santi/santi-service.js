@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 3001;
+const port = 8000;
 
 app.get('/greeting', (req, res) => {
   res.json({ mensaje: "👋 Hi, I'm Santiago Sánchez, 🔭 I’m currently working with 🐍" });
