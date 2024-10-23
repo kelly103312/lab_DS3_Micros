@@ -1,0 +1,27 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: servicio-july-pod
+  labels:
+    app: servicio-july
+spec:
+  containers:
+    - name: servicio-july-container
+      image: juleipssy/servicio-july:latest
+      ports:
+        - containerPort: 5000
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: servicio-july-service
+spec:
+  type: ClusterIP
+  ports:
+    - port: 80
+      targetPort: 5000
+      protocol: TCP
+  selector:
+    app: servicio-july
